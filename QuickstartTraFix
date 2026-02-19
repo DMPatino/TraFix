@@ -1,0 +1,23 @@
+What you got:
+mock_server.py — Run this on one host (your "fake internet"). It listens on port 80 and responds to HTTP requests for all 20 domains with realistic HTML pages, correct headers, and simulated latency. It logs every hit with the requesting IP.
+traffic_gui.py — The main GUI tool. Dark terminal-style interface with:
+
+SSH credential fields (username + password)
+IP range input supporting CIDR (192.168.1.0/24), dash ranges (10.0.0.1-50), or comma lists
+Mock server IP field
+Traffic controls: cycles, delay, thread count
+Checkboxes to enable/disable individual domains
+Three actions: Deploy & Run (hosts file + traffic), Hosts Only, Remove Hosts (clean cleanup)
+Live host status table and scrolling activity log
+
+
+Quick start:
+bash# 1. Install deps on your GUI/control host
+pip install paramiko flask
+
+# 2. On your mock server host (needs port 80)
+sudo python3 mock_server.py
+
+# 3. Launch the GUI
+python3 traffic_gui.py
+The /etc/hosts entries are wrapped in clearly marked comments (=== TRAFFIC-SIM START/END ===) so the Remove Hosts button cleanly restores the original file with no residue.
