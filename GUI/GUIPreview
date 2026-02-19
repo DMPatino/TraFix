@@ -1,0 +1,2 @@
+Left panel — all your config inputs: SSH credentials, IP range, mock server IP, traffic options (cycles/delay/threads), and the full domain checklist with All/None toggles.
+Right panel — the action buttons across the top (Deploy & Run, Hosts Only, Remove Hosts, Stop, Clear Log), an animated progress bar while running, the live host status table showing per-host results color-coded green/yellow/red, and the scrolling activity log at the bottom showing timestamped output for every SSH action and HTTP response.
