@@ -1,0 +1,19 @@
+Dependencies needed:
+-Flask
+To download flask you first need to make sure python3 is installed
+$ pip install virtualenv
+-it should spit out the path to where the virtualenv script was installed
+cd to that directory
+and run it pointing it to your project (choose a name)
+$ cd /home/cvte/.local/bin
+$ ls
+$ ./virtualenv TraFix-project
+
+then activate the enviroment
+$ source TraFix-project/bin/activate
+this should change your prompt to your project name
+install flask to develop the app
+(TraFix-project) $ pip install flask
+
+verify it worked
+(TraFix-project) $ python -c "print('hello')"
