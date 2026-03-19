@@ -1,3 +1,8 @@
+------------------------------------
+*All of these need to be on the ACN*
+------------------------------------
+
+
 Dependencies needed:
 -Flask
 To download flask you first need to make sure python3 is installed
@@ -17,3 +22,6 @@ install flask to develop the app
 
 verify it worked
 (TraFix-project) $ python -c "print('hello')"
+
+*Now we need to install tkinter
+
