@@ -1,0 +1,8 @@
+# First box — apply DNS and run traffic
+sudo python3 litetrafix.py --server-ip 192.168.1.254 --apply-dns --cycles 3
+
+# Any box after DNS is already set
+sudo python3 litetrafix.py --cycles 5 --delay 1
+
+# Clean up when done
+sudo python3 litetrafix.py --clear-dns
